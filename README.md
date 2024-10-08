@@ -1,63 +1,129 @@
-# MAXI ROE - Recycling Original Equipment
+# **MaxiROE (Maximized Return on Extraction)**
 
-MAXI ROE is a vehicle dismantling management system designed to optimize the removal, cataloging, and resale of OEM parts. This system ensures that dismantlers can extract maximum profitability from every vehicle by following specific rules and logic, utilizing market data, and adhering to eco-friendly practices. MAXI ROE integrates advanced data-driven strategies with automation to streamline the dismantling process and part sales.
+Welcome to **MaxiROE**, the ultimate **Automotive Dismantling Management System** that empowers recyclers and dismantlers to **maximize their profits** by extracting the most valuable parts from every vehicle. With MaxiROE, you gain complete control over your inventory, pricing, part removal processes, and shipping logistics, helping you streamline operations and increase efficiency across the board.
 
-## Table of Contents
-- [Overview](#overview)
+---
+
+## **Table of Contents**
+- [Introduction](#introduction)
+- [Key Benefits for Recyclers](#key-benefits-for-recyclers)
 - [Features](#features)
-- [System Requirements](#system-requirements)
+- [Tech Stack](#tech-stack)
+- [System Architecture](#system-architecture)
 - [Installation](#installation)
-- [Rules and Logic](#rules-and-logic)
+- [Configuration](#configuration)
 - [Usage](#usage)
+- [API Documentation](#api-documentation)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Overview
+---
 
-MAXI ROE is a modular platform that combines market analysis, optimized part removal sequences, dynamic pricing, and efficient storage methods to ensure the profitable resale of used parts. The system also tracks each part using QR codes and SKUs, ensuring full traceability from removal to sale. Additionally, the system integrates eco-friendly recycling practices to minimize waste from vehicles.
+## **Introduction**
 
-## Features
+MaxiROE is designed for auto recyclers and dismantlers who want to optimize every aspect of their business. It combines cutting-edge technology with industry expertise to help you make data-driven decisions when extracting and listing car parts. The system automates processes that are traditionally manual, reduces human error, and ensures you’re always getting the most out of every vehicle.
 
-- **Part Categorization**: Ensures parts are matched to their corresponding vehicle types and models.
-- **Dynamic Pricing**: Uses real-time market data for competitive and profitable pricing.
-- **Optimized Removal Order**: Prioritizes parts based on profitability and ease of removal.
-- **Sectional Vehicle Framework**: Divides the vehicle into logical sections for better part location and removal.
-- **AI-Powered Quality Control**: Assesses part condition before listing to prevent unprofitable listings.
-- **Inventory Storage Optimization**: Matches parts to suitable storage bins or shelves based on volume and weight.
-- **QR Code and SKU Tracking**: Ensures traceability for each part from dismantling to sale.
-- **Eco-Friendly Disposal**: Integrates recycling strategies for non-sellable parts.
-- **Data-Driven Reporting**: Provides insights and reports for better decision-making.
+Whether you're a small business dismantling a handful of cars a month or a large-scale operation with hundreds of vehicles, MaxiROE is scalable to meet your needs.
 
-## System Requirements
+---
 
-- **Server**: Apache Web Server (via XAMPP)
-- **Database**: PHPMyAdmin with SQL database
-- **Back-End**: Flask (Python)
-- **Front-End**: React.js
-- **Storage**: S3 for image storage
-- **AI Integration**: TensorFlow CV for part condition assessment
-- **Optional**: Integration with eBay’s API (for market data)
+## **Key Benefits for Recyclers**
 
-## Installation
+### **1. Maximize Your Return on Every Vehicle**
+MaxiROE uses real-time market data to identify the most valuable parts from each vehicle. You’ll receive a prioritized list of parts to remove, ensuring that you focus on the components that offer the highest profit margins. The system also takes into account the overall scrap value of the vehicle to provide you with a full financial breakdown before dismantling even begins.
 
-See [Installation.md](./Installation.md) for setup and installation instructions.
+### **2. Real-Time Pricing Insights**
+Forget outdated catalogs. MaxiROE pulls real-time pricing data from online marketplaces like eBay, giving you up-to-date pricing trends and letting you list your parts for maximum profitability. This allows you to remain competitive while increasing your margins.
 
-## Rules and Logic
+### **3. Streamline Your Operations**
+With an intuitive interface and streamlined workflows, MaxiROE is designed to simplify your dismantling process. From receiving a vehicle to shipping out a sold part, the system provides step-by-step guidance, helping your team work efficiently. Reduce downtime, optimize storage, and minimize labor costs.
 
-The system is governed by a strict set of rules and logic to optimize part removal and resale profitability. See [LOGIC.md](./LOGIC.md) for detailed rules and logic.
+### **4. Advanced Shipping and Packaging Automation**
+MaxiROE automatically calculates the best packaging strategies based on part dimensions and weight, saving you time and reducing shipping costs. The system also integrates with major carriers to automate label printing and shipment tracking, ensuring a smooth and efficient fulfillment process.
 
-## Usage
+### **5. Detailed Inventory Management**
+Track every part from removal to storage with MaxiROE's advanced inventory system. Each part is assigned a unique SKU and QR code, making it easy to locate in your warehouse. You’ll always know exactly what’s in stock, where it’s located, and when it’s ready to ship.
 
-To understand how to use MAXI ROE for dismantling vehicles, see [Usage.md](./Usage.md) for a step-by-step guide.
+---
 
-## Contributing
+## **Features**
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m 'Add your feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Create a pull request.
+### **1. Vehicle Management**
+   - Input vehicle data (VIN, purchase price, auction details).
+   - Auto-generate prioritized parts lists based on real-time market trends.
+   - Track the financial performance of each vehicle with full P&L reporting.
 
-## License
+### **2. Part Removal Optimization**
+   - Step-by-step guidance on the best removal order for valuable parts.
+   - Machine learning recommendations based on previous vehicle teardown data.
+   - Augmented Reality (AR) guidance for complex part removals.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+### **3. Real-Time Market Data**
+   - eBay integration for real-time part pricing.
+   - Automatic eBay listings with pre-filled descriptions, images, and optimized pricing.
+   - Market demand analysis for specific parts, helping you determine when to sell or hold inventory.
+
+### **4. Inventory Management**
+   - SKU-based system for tracking parts and storage locations.
+   - QR codes for easy scanning and updates.
+   - Visual dashboard for managing part inventory, sales, and storage.
+
+### **5. Shipping and Fulfillment**
+   - Automated packing suggestions for cost-effective shipping.
+   - Shipping label printing and tracking integration with major carriers.
+   - Dynamic shipping cost calculations based on part dimensions and weight.
+
+### **6. AI-Powered Quality Control**
+   - TensorFlow-powered AI detects defects and damage in parts, ensuring only high-quality components are listed for sale.
+   - Automated part grading for condition assessment, minimizing human error.
+
+### **7. Advanced Analytics and Reporting**
+   - Sales performance dashboards.
+   - Inventory turnover reports.
+   - Profit and loss analysis for each vehicle and part category.
+
+---
+
+## **Tech Stack**
+
+MaxiROE is built using modern, scalable technologies to ensure that the system can grow with your business.
+
+- **Frontend**: Vue.js (for a responsive, user-friendly interface).
+- **Backend**: Ruby on Rails (for robust business logic and data management).
+- **Database**: PostgreSQL (for secure and efficient data storage).
+- **Market Integration**: eBay scraping via custom Python scripts.
+- **Cloud Storage**: AWS S3 (for secure, scalable image storage).
+- **AI/ML**: TensorFlow for quality control and machine learning.
+- **API Gateway**: Flask (for API service integrations).
+
+---
+
+## **System Architecture**
+
+MaxiROE is designed to be modular and scalable:
+
+1. **Frontend (Vue.js)**: A responsive, interactive interface that allows dismantlers, inventory managers, and fulfillment staff to perform their tasks efficiently.
+2. **Backend (Rails)**: Ruby on Rails handles business logic, data management, and API integrations.
+3. **PostgreSQL**: Secure storage for vehicle, part, and market data.
+4. **AWS S3**: Used for storing images and media files, ensuring quick access and reliable storage.
+5. **eBay Integration**: Fetches real-time pricing data from eBay for parts profitability analysis.
+6. **AI-Powered Quality Control**: TensorFlow AI models assess part quality, automating condition reports and improving listing accuracy.
+
+---
+
+## **Installation**
+
+### **Requirements**
+- Ruby 3.0+
+- Rails 6.1+
+- Node.js 16+
+- PostgreSQL 12+
+- AWS S3 account (for image storage)
+- Python (for eBay scraping scripts)
+
+### **Steps**
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/username/maxiroe.git
+   cd maxiroe
