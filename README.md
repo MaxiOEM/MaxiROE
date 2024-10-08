@@ -1,3 +1,5 @@
+Here’s an expanded version of the GitHub documentation with more marketing-oriented information targeted toward recyclers, formatted in Markdown.
+
 # **MaxiROE (Maximized Return on Extraction)**
 
 Welcome to **MaxiROE**, the ultimate **Automotive Dismantling Management System** that empowers recyclers and dismantlers to **maximize their profits** by extracting the most valuable parts from every vehicle. With MaxiROE, you gain complete control over your inventory, pricing, part removal processes, and shipping logistics, helping you streamline operations and increase efficiency across the board.
@@ -127,3 +129,118 @@ MaxiROE is designed to be modular and scalable:
    ```bash
    git clone https://github.com/username/maxiroe.git
    cd maxiroe
+
+	2.	Install Ruby dependencies:
+
+bundle install
+
+
+	3.	Install frontend dependencies:
+
+cd frontend
+npm install
+
+
+	4.	Database Setup:
+	•	Configure PostgreSQL connection in config/database.yml.
+	•	Run the following commands:
+
+rails db:create
+rails db:migrate
+
+
+	5.	AWS S3 Configuration:
+	•	Add your S3 credentials in config/credentials.yml:
+
+aws:
+  access_key_id: "your_access_key"
+  secret_access_key: "your_secret_key"
+  bucket_name: "your_bucket_name"
+
+
+	6.	Run the Rails server:
+
+rails server
+
+
+	7.	Run the Vue.js frontend:
+
+cd frontend
+npm run serve
+
+
+
+Configuration
+
+Database
+
+Ensure your PostgreSQL server is running and configured. Modify config/database.yml with your database details.
+
+Environment Variables
+
+Set environment variables for:
+
+	•	eBay scraping parameters.
+	•	AWS S3 credentials.
+	•	PostgreSQL connection settings.
+
+Create a .env file for local development:
+
+EBAY_API_KEY=your_ebay_key
+AWS_ACCESS_KEY_ID=your_aws_key
+AWS_SECRET_ACCESS_KEY=your_aws_secret
+AWS_BUCKET_NAME=your_bucket
+DATABASE_URL=postgresql://user:password@localhost/maxiroe_db
+
+Usage
+
+1. Adding a Vehicle
+
+Navigate to the Vehicle Management section, input details like VIN, purchase price, and auction stock number. MaxiROE will automatically generate a prioritized parts list for removal.
+
+2. Part Removal Process
+
+Follow the Part Removal module’s optimized instructions to remove parts in the most profitable order. Use the AR feature for complex dismantling procedures.
+
+3. Listing Parts on eBay
+
+Go to the eBay Integration module. MaxiROE will provide real-time pricing suggestions and auto-generate listings with pre-filled descriptions and images.
+
+4. Shipping and Fulfillment
+
+Use the Shipping module to generate labels, packaging instructions, and track shipments.
+
+API Documentation
+
+Authentication
+
+All API endpoints require an API key:
+
+Authorization: Bearer <API_KEY>
+
+Endpoints
+
+Vehicles
+
+	•	GET /api/vehicles
+	•	Retrieves a list of vehicles in the system.
+	•	POST /api/vehicles
+	•	Adds a new vehicle to the system.
+
+Parts
+
+	•	GET /api/vehicles/:id/parts
+	•	Retrieves parts for a specific vehicle.
+	•	POST /api/parts
+	•	Adds a part to the inventory.
+
+eBay Listings
+
+	•	GET /api/ebay/listings
+	•	Returns eBay listings for market analysis.
+
+For more details, check our API Documentation.
+
+Contributing
+
+We welcome contributions to Maxi
