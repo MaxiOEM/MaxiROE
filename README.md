@@ -1,54 +1,63 @@
-# MAXI ROE Modular Architecture for the Exchange of Information for Recycling Original Equipment
+# MAXI ROE - Recycling Original Equipment
+
+MAXI ROE is a vehicle dismantling management system designed to optimize the removal, cataloging, and resale of OEM parts. This system ensures that dismantlers can extract maximum profitability from every vehicle by following specific rules and logic, utilizing market data, and adhering to eco-friendly practices. MAXI ROE integrates advanced data-driven strategies with automation to streamline the dismantling process and part sales.
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [System Requirements](#system-requirements)
+- [Installation](#installation)
+- [Rules and Logic](#rules-and-logic)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Overview
 
-**MAXI ROE** (Modular Architecture for the Exchange of Information) is a cutting-edge, data-driven automotive dismantling and recycling management system. MAXI ROE simplifies and optimizes every step of the dismantling process by utilizing a powerful modular framework that handles vehicle intake, part extraction, inventory management, and profit analysis with seamless efficiency.
+MAXI ROE is a modular platform that combines market analysis, optimized part removal sequences, dynamic pricing, and efficient storage methods to ensure the profitable resale of used parts. The system also tracks each part using QR codes and SKUs, ensuring full traceability from removal to sale. Additionally, the system integrates eco-friendly recycling practices to minimize waste from vehicles.
 
-By leveraging data from platforms like IAAI, Copart, and eBay, **MAXI ROE** helps recyclers make informed decisions about which vehicles to purchase, which parts to remove, and how to list and ship them to maximize returns. Whether you're a recycler, dismantler, or part supplier, MAXI ROE transforms how you approach vehicle teardown and part sales.
+## Features
 
-## Key Features
+- **Part Categorization**: Ensures parts are matched to their corresponding vehicle types and models.
+- **Dynamic Pricing**: Uses real-time market data for competitive and profitable pricing.
+- **Optimized Removal Order**: Prioritizes parts based on profitability and ease of removal.
+- **Sectional Vehicle Framework**: Divides the vehicle into logical sections for better part location and removal.
+- **AI-Powered Quality Control**: Assesses part condition before listing to prevent unprofitable listings.
+- **Inventory Storage Optimization**: Matches parts to suitable storage bins or shelves based on volume and weight.
+- **QR Code and SKU Tracking**: Ensures traceability for each part from dismantling to sale.
+- **Eco-Friendly Disposal**: Integrates recycling strategies for non-sellable parts.
+- **Data-Driven Reporting**: Provides insights and reports for better decision-making.
 
-### 1. **Automated Vehicle Intake**
-   MAXI ROE automates the addition of vehicles into the system from sources like Copart and IAAI, reducing manual data entry and human error. With automatic vehicle information imports (VIN, lot number, purchase history), recyclers can streamline their workflow from the moment a car arrives.
+## System Requirements
 
-### 2. **Intelligent Part Removal Strategy**
-   With built-in intelligence for part removal prioritization, MAXI ROE ensures that dismantlers focus on high-value parts based on the market's demand. The system uses eBay data and historical sales information to provide a real-time part removal order, maximizing profitability.
+- **Server**: Apache Web Server (via XAMPP)
+- **Database**: PHPMyAdmin with SQL database
+- **Back-End**: Flask (Python)
+- **Front-End**: React.js
+- **Storage**: S3 for image storage
+- **AI Integration**: TensorFlow CV for part condition assessment
+- **Optional**: Integration with eBay’s API (for market data)
 
-### 3. **Integrated Inventory & Listing**
-   MAXI ROE connects directly to eBay to automate part listings based on the parts removed, integrating with high-resolution image uploads and detailed part descriptions. No more guessing which parts to list or how to price them—MAXI ROE does that for you.
+## Installation
 
-### 4. **Advanced Profitability Analysis**
-   Analyze potential profits before purchasing a vehicle with our MAXI ROE market-driven insights. The system evaluates vehicles based on purchase price, part availability, and market trends, giving you a full report on potential profit and loss before committing to any purchase.
+See [Installation.md](./Installation.md) for setup and installation instructions.
 
-### 5. **Modular Architecture**
-   MAXI ROE's flexible, modular system allows recyclers to configure the platform to fit their exact needs. It supports a variety of integrations, from different vehicle auction platforms to part management systems.
+## Rules and Logic
 
-### 6. **Augmented Reality (AR) for Dismantling**
-   Using augmented reality, MAXI ROE assists dismantlers in identifying part locations and optimal removal strategies. The AR feature guides users to efficiently extract parts while minimizing damage.
+The system is governed by a strict set of rules and logic to optimize part removal and resale profitability. See [LOGIC.md](./LOGIC.md) for detailed rules and logic.
 
-### 7. **AI-Enhanced Quality Control**
-   MAXI ROE employs AI-driven quality control mechanisms to assess parts for damage, ensuring only the best-quality parts are sold, reducing returns and customer complaints.
+## Usage
 
-### 8. **Dynamic Pricing Engine**
-   Market fluctuations are accounted for through our dynamic pricing engine, which adjusts part prices based on real-time supply and demand, maximizing profit margins.
+To understand how to use MAXI ROE for dismantling vehicles, see [Usage.md](./Usage.md) for a step-by-step guide.
 
-### 9. **Storage Optimization**
-   MAXI ROE’s intelligent storage system uses part dimensions and volume analysis to optimize the use of space in bins and shelves, reducing the risk of part damage and increasing operational efficiency.
+## Contributing
 
-## For Recyclers & Dismantlers
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add your feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Create a pull request.
 
-If you're in the automotive recycling business, **MAXI ROE** is designed specifically to increase efficiency and profitability. Dismantlers are guided through the part removal process with a prioritized order of operations, reducing wasted time on low-value parts. Recyclers benefit from real-time market data and advanced part storage optimization, ensuring minimal inventory loss and streamlined shipping.
+## License
 
-With **MAXI ROE**, you’ll:
-- **Save Time**: Automate vehicle intake, part listing, and shipping processes.
-- **Maximize Profits**: Access market insights to prioritize and price high-demand parts.
-- **Reduce Waste**: Only remove and sell parts that are profitable and in demand.
-- **Scale Efficiently**: Modular architecture allows for easy expansion and integration with other systems.
-
-## Getting Started
-
-### 1. Clone the Repository
-To start using MAXI ROE, clone the repository from GitHub:
-
-```bash
-git clone https://github.com/yourusername/maxiroe.git
+This project is licensed under the MIT License. See the LICENSE file for details.
