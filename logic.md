@@ -1,4 +1,3 @@
-```markdown
 # MAXI ROE Rules and Logic
 
 MAXI ROE operates based on the following key rules and logic frameworks to ensure optimal dismantling and part profitability.
