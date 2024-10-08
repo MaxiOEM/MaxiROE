@@ -1,5 +1,3 @@
-### **LOGIC.md**
-
 ```markdown
 # MAXI ROE Rules and Logic
 
