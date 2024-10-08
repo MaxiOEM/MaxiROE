@@ -1,5 +1,3 @@
-Here’s an expanded version of the GitHub documentation with more marketing-oriented information targeted toward recyclers, formatted in Markdown.
-
 # **MaxiROE (Maximized Return on Extraction)**
 
 Welcome to **MaxiROE**, the ultimate **Automotive Dismantling Management System** that empowers recyclers and dismantlers to **maximize their profits** by extracting the most valuable parts from every vehicle. With MaxiROE, you gain complete control over your inventory, pricing, part removal processes, and shipping logistics, helping you streamline operations and increase efficiency across the board.
