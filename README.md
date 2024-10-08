@@ -1,4 +1,4 @@
-# MAXI ROE - Modular Architecture for the Exchange of Information
+# MAXI ROE Modular Architecture for the Exchange of Information
 
 ## Overview
 
